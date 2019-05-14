@@ -34,8 +34,10 @@ class Count
      * For multiples of 3, print "Linio".
      * For multiples of 5 print "IT".
      * For numbers which are multiples of both 3 and 5, print "Linianos".
+     *
+     * @return string
      */
-    public function printMarkers()
+    public function printMarkers(): string
     {
         $container = [];
 
@@ -56,7 +58,7 @@ class Count
     /**
      * @return int
      */
-    public function getLength()
+    public function getLength(): int
     {
         return $this->length;
     }
@@ -90,7 +92,7 @@ class Count
      * @param int $key
      * @return string
      */
-    protected function markerValue($key)
+    protected function markerValue($key): string
     {
         $markers = $this->getMarkers();
 
@@ -102,7 +104,7 @@ class Count
      * @param int $value
      * @return bool
      */
-    protected function multipleOf($integer, $value)
+    protected function multipleOf($integer, $value): bool
     {
         return $integer % $value === 0;
     }
