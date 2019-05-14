@@ -11,4 +11,4 @@ This is a simple app for printing numbers from 1 to 100 with a few requirements:
  `composer install`
 
  #### tests:
- `vendor/bin/phpunit tests`
+ `vendor/bin/phpunit`
